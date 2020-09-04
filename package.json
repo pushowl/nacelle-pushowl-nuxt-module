@@ -1,11 +1,8 @@
 {
-  "name": "nacelle-pushowl-nuxt-module",
+  "name": "@pushowl/nacelle-nuxt-module",
   "version": "0.0.1",
   "description": "Integrates PushOwl into your Nacelle Nuxt project",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "contributors": [
     {
       "name": "PushOwl"

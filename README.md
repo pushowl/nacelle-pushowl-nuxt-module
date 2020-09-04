@@ -4,19 +4,27 @@
 
 - A Nacelle project set up locally. See https://docs.getnacelle.com for getting started.
 - **IMPORTANT**: Only Shopify store backend is supported currently.
-- A [PushOwl](https://pushowl.com) account and app installed on your Shopify store.
+- [PushOwl](https://pushowl.com) app installed on your Shopify store.
 
 ## Setup
 
 ### Add Module to Nacelle
 
-Once you have Nacelle and PushOwl set up you can install this module in your project from `npm`:
+Once you have Nacelle and PushOwl set up you can install this module in your project from Github Packages through `npm` (or `yarn`):
+
+Create a `.npmrc` file in your project and add the following line to scope `@pushowl` package to Github packages:
 
 ```
-npm install nacelle-pushowl-nuxt-module --save
+@pushowl:registry=https://npm.pkg.github.com
 ```
 
-After the package has installed, open `nuxt.config.js`. Under `modules` add `@nacelle/nacelle-klaviyo-nuxt-module` to the array. It should look something like this:
+Then install the package itself:
+
+```
+npm install @pushowl/nacelle-nuxt-module --save
+```
+
+After the package has installed, open `nuxt.config.js`. Under `modules` add `@nacelle/nacelle-nuxt-module` to the array. It should look something like this:
 
 ```
 modules: [
@@ -24,7 +32,7 @@ modules: [
   '@nuxtjs/dotenv',
   '@nacelle/nacelle-nuxt-module',
   '@nuxtjs/sitemap',
-  'nacelle-pushowl-nuxt-module'
+  '@pushowl/nacelle-nuxt-module'
 ],
 ```
 
