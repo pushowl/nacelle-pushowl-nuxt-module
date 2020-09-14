@@ -97,10 +97,10 @@ For `customPrompt`, following extra options are available:
 - `description`: Description for the prompt
 - `yesButton`: "yes" button refers to the positive/allow button in the prompt. This is an object with `label` property.
 - `noButton`: "no" button refers to the negative/deny button in the prompt. This is an object with `label` property.
-- `logo`: URL of the image to show as logo. Defaults to a bell if nothing is passed.
-- `position`: Needs to be specified for desktop and mobile separately like so `position: {default: 'top-left', mobile: 'top'}`. Available options for desktop(default): `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right`. Available options for mobile: `top`, `bottom`.
-  `overlay`: Controls the overlay that shows with the native permission prompt. Only accepts one property for now: `enabled: true|false`. Eg. `overlay: { enabled: false }`
-- `theme`: Allows changing various colors in the prompt. Currently supported properties are: `theme: { yesButtonBgColor: '#f00', yesButtonColor: '#fff' }`
+- `logo` _(optional)_: URL of the image to show as logo. Defaults to a bell if nothing is passed.
+- `position` _(optional)_: Needs to be specified for desktop and mobile separately like so `position: {default: 'top-left', mobile: 'top'}`. Available options for desktop(default): `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right`. Available options for mobile: `top`, `bottom`. Default is `{ default: 'top-center', mobile: 'top' }`
+  `overlay` _(optional)_: Controls the overlay that shows with the native permission prompt. Only accepts one property for now: `enabled: true|false`. Eg. `overlay: { enabled: false }`
+- `theme` _(optional)_: Allows changing various colors in the prompt. Currently supported properties are: `theme: { yesButtonBgColor: '#f00', yesButtonColor: '#fff' }`
 
 ### `syncCart`
 
