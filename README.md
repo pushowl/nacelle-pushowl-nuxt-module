@@ -172,7 +172,7 @@ ctx.app.router.onReady(() => {
 
 ```
 
-### Show a native prompt 5 seconds after the app is open
+### Show a native browser prompt 5 seconds after the app is open
 
 ```
 setTimeout(() => {
