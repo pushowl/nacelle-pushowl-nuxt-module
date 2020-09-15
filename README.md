@@ -75,6 +75,23 @@ mkdir -p static/pushowl
 cp node_modules/@pushowl/nacelle-nuxt-module/lib/templates/service-worker.js static/pushowl/
 ```
 
+### 4. Initialize PushOwl
+
+In `default.vue`, inside the `created` function, add the following code to initialize PushOwl:
+
+```
+created() {
+  // Existing code ...
+
+  // Initialize PushOwl
+  if (typeof window !== "undefined") {
+    window.pushowl.init({
+      subdomain: "kushagra-store"
+    });
+  }
+},
+```
+
 Now you are all set to use the API functions and trigger the prompts to ask for push notification permission.
 Note: The SDK itself doesn't trigger any prompt. It's upto you to trigger it whenever you want.
 
