@@ -10,7 +10,6 @@
 
 - Show prompts to collect subscribers ✅
 - Automation: Welcome Notification ✅
-- Automation: Abandoned Cart Recovery ✅
 - Automation: Shipping Notifications ✅
 - Automation: Browse Abandonment ❌
 - Automation: Price Drop ❌
@@ -88,6 +87,16 @@ created() {
 
 Now you are all set to use the API functions and trigger the prompts to ask for push notification permission.
 Note: The SDK itself doesn't trigger any prompt. It's upto you to trigger it whenever you want.
+
+### 5. Abandoned Cart Recovery (Optional, if enabled)
+
+Abandoned Cart, if available on your PushOwl plan, works out of the box through this module for most parts. There is just configuration change required on PushOwl Side. Abandoned Cart push notifications open the cart page of your store. For stores with custom frontends, it becomes difficult to figure out the cart URL automatically. Hence, you need to explicitly enter your cart URL from PushOwl dashboard. Here is how to do it:
+
+1. Login to PushOwl dashboard -> https://dashboard.pushowl.com/shopify-login
+2. Go to Abandoned Cart settings though Automations > Abandoned Carts or directly visit https://dashboard.pushowl.com/automation/abandoned-cart-recovery
+3. Edit each of the active notification you see and change the cart URLs in them to your actual cart URL.
+   ![changing cart urls](/assets/cart-url-change.png)
+4. Save and you are done!
 
 ## API
 
@@ -195,3 +204,13 @@ setTimeout(() => {
   }
 }, 5000)
 ```
+
+## Changelog
+
+### 0.3.0
+
+- ACR support added
+
+### 0.2.0
+
+- Moved from Github packages to npm
