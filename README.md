@@ -24,16 +24,10 @@ Note: The unavailable features are coming soon!
 
 Once you have Nacelle and PushOwl set up you can install this module in your project from Github Packages through `npm` (or `yarn`):
 
-Create a `.npmrc` file in your project and add the following line to scope `@pushowl` package to Github packages:
+Install the package:
 
 ```
-@pushowl:registry=https://npm.pkg.github.com
-```
-
-Then install the package itself:
-
-```
-npm install @pushowl/nacelle-nuxt-module --save
+npm i @pushowl/nacelle-nuxt-module
 ```
 
 ### 2. Add module to app
