@@ -208,6 +208,10 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.3.1
+
+- Prevent escaping of Pushowl script content
+
 ### 0.3.0
 
 - ACR support added
