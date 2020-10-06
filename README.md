@@ -11,7 +11,7 @@
 - Show prompts to collect subscribers ✅
 - Automation: Welcome Notification ✅
 - Automation: Shipping Notifications ✅
-- Automation: Abandoned Cart Recovery ✅
+- Automation: Abandoned Cart Recovery ❌
 - Automation: Browse Abandonment ❌
 - Automation: Price Drop ❌
 - Automation: Back in Stock ❌
@@ -207,6 +207,10 @@ setTimeout(() => {
 ```
 
 ## Changelog
+
+### 0.3.2
+
+- Disable ACR due to a bug
 
 ### 0.3.1
 
