@@ -91,11 +91,15 @@ Note: The SDK itself doesn't trigger any prompt. It's upto you to trigger it whe
 
 ### 5. Abandoned Cart Recovery (Optional, if enabled)
 
-Abandoned Cart, if available on your PushOwl plan, works out of the box through this module for most parts. There is just configuration change required on PushOwl Side. Abandoned Cart push notifications open the cart page of your store. For stores with custom frontends, it becomes difficult to figure out the cart URL automatically. Hence, you need to explicitly enter your cart URL from PushOwl dashboard. Here is how to do it:
+Abandoned Cart, if available on your PushOwl plan, works out of the box through this module for most parts. There is just configuration change required on PushOwl Side. Abandoned Cart push notifications open the cart page of your store. For stores with custom frontends, it becomes difficult to figure out the cart URL automatically. Hence, you need to explicitly enter your cart URL from PushOwl dashboard.
+
+If you have implemented a custom cart page in your store, use that page's URL as cart URL. Otherwise, you can use the following URL as your cart page: `https://<website_domain>?showCart`
+
+Here is how to update your cart URL in PushOwl dashboard:
 
 1. Login to PushOwl dashboard -> https://dashboard.pushowl.com/shopify-login
 2. Go to Abandoned Cart settings though Automations > Abandoned Carts or directly visit https://dashboard.pushowl.com/automation/abandoned-cart-recovery
-3. Edit each of the active notification you see and change the cart URLs in them to your actual cart URL.
+3. Edit each of the active notification you see and change the cart URLs in them to your actual cart URL (as discussed above).
    ![changing cart urls](/assets/cart-url-change.png)
 4. Save and you are done!
 
@@ -125,7 +129,7 @@ For `customPrompt`, following extra options are available:
 
 ### `syncCart`
 
-Cart syncing is auto-enabled in this module. Nothing extra needs to be done to use PushOwl's Abandoned Cart Recovery feature. You just need to have it enabled from the PushOwl dashboard.
+Cart syncing is auto-enabled in this module. This API gets called automatically whenever the cart is updated.
 
 ## Recipes
 
