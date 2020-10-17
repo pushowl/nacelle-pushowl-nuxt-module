@@ -11,7 +11,7 @@
 - Show prompts to collect subscribers ✅
 - Automation: Welcome Notification ✅
 - Automation: Shipping Notifications ✅
-- Automation: Abandoned Cart Recovery ❌
+- Automation: Abandoned Cart Recovery ✅
 - Automation: Browse Abandonment ❌
 - Automation: Price Drop ❌
 - Automation: Back in Stock ❌
@@ -93,13 +93,13 @@ Note: The SDK itself doesn't trigger any prompt. It's upto you to trigger it whe
 
 Abandoned Cart, if available on your PushOwl plan, works out of the box through this module for most parts. There is just configuration change required on PushOwl Side. Abandoned Cart push notifications open the cart page of your store. For stores with custom frontends, it becomes difficult to figure out the cart URL automatically. Hence, you need to explicitly enter your cart URL from PushOwl dashboard.
 
-If you have implemented a custom cart page in your store, use that page's URL as cart URL. Otherwise, you can use the following URL as your cart page: `https://<website_domain>?showCart`
+If you have implemented a custom cart page in your store, use that page's URL as cart URL. Otherwise, you can use the following URL as your cart page: `https://<website_domain>?showCart=true`
 
 Here is how to update your cart URL in PushOwl dashboard:
 
 1. Login to PushOwl dashboard -> https://dashboard.pushowl.com/shopify-login
 2. Go to Abandoned Cart settings though Automations > Abandoned Carts or directly visit https://dashboard.pushowl.com/automation/abandoned-cart-recovery
-3. Edit each of the active notification you see and change the cart URLs in them to your actual cart URL (as discussed above).
+3. Edit each of the active notification you see and change all instances of cart URLs in them to your actual cart URL (as discussed above).
    ![changing cart urls](/assets/cart-url-change.png)
 4. Save and you are done!
 
@@ -210,11 +210,20 @@ setTimeout(() => {
 }, 5000)
 ```
 
+## TODOS
+
+- Give dashboard config as a global object to use while calling the API functions
+- Support Browser Abandonment
+
 ## Changelog
+
+### 0.4.0
+
+- Abandoned Cart Recovery is now enabled. See ACR section above to see how it works.
 
 ### 0.3.2
 
-- Disable ACR due to a bug
+- Disable Abandoned Cart Recovery (ACR) due to a bug
 
 ### 0.3.1
 
