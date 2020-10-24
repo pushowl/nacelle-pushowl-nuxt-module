@@ -217,6 +217,10 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.4.2
+
+- Fix 400 calls
+
 ### 0.4.1
 
 - Prevent `window.pushowl` from re-initializing again and again. Instead it will reuse the exisiting `window.pushowl` object, if available.
