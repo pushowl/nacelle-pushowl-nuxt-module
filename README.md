@@ -217,6 +217,10 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.4.3
+
+- Fix issue where checkout sync call wasn't going
+
 ### 0.4.2
 
 - Fix 400 calls
