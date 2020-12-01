@@ -32,7 +32,7 @@ npm i @pushowl/nacelle-nuxt-module
 
 ### 2. Add module to app
 
-After the package has installed, open `nuxt.config.js`. Under `modules` add `@nacelle/nacelle-nuxt-module` to the array. It should look something like this:
+After the package has installed, open `nuxt.config.js`. Under `modules` add `@pushowl/nacelle-nuxt-module` to the array. It should look something like this:
 
 ```
 modules: [
