@@ -217,6 +217,10 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.5.0
+
+- Move script injection from module to plugin file.
+
 ### 0.4.3
 
 - Fix issue where checkout sync call wasn't going
