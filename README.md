@@ -1,4 +1,4 @@
-# Nacelle PushOwl Nuxt Module
+# Nacelle PushOwl Nuxt Module ![npm version](https://img.shields.io/npm/v/@pushowl/nacelle-nuxt-module?color=%23fa436b)
 
 ## Requirements
 
