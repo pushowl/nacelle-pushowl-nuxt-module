@@ -197,7 +197,9 @@ ctx.app.router.onReady(() => {
 
 ```
 
-### Show a native browser prompt 5 seconds after the app is open
+### Show prompt with a timeout/delay
+
+Let's say you want the native browser prompt 5 seconds after the app is open:
 
 ```
 setTimeout(() => {
