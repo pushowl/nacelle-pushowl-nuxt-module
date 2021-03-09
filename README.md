@@ -12,7 +12,7 @@
 - Automation: Welcome Notification ✅
 - Automation: Shipping Notifications ✅
 - Automation: Abandoned Cart Recovery ✅
-- Automation: Browse Abandonment ❌
+- Automation: Browse Abandonment ✅
 - Automation: Price Drop ❌
 - Automation: Back in Stock ❌
 
@@ -219,10 +219,10 @@ setTimeout(() => {
 }, 5000)
 ```
 
-## TODOS
+## Roadmap
 
 - Give dashboard config as a global object to use while calling the API functions
-- Support Browser Abandonment
+- Support Price drop & Back-in-stock automations
 
 ## Changelog
 
