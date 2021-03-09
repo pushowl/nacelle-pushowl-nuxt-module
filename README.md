@@ -89,7 +89,7 @@ created() {
 Now you are all set to use the API functions and trigger the prompts to ask for push notification permission.
 Note: The SDK itself doesn't trigger any prompt. It's upto you to trigger it whenever you want.
 
-### 5. Abandoned Cart Recovery (Optional, if enabled)
+### 5. Abandoned Cart Recovery automation (Optional, if enabled)
 
 Abandoned Cart, if available on your PushOwl plan, works out of the box through this module for most parts. There is just configuration change required on PushOwl Side. Abandoned Cart push notifications open the cart page of your store. For stores with custom frontends, it becomes difficult to figure out the cart URL automatically. Hence, you need to explicitly enter your cart URL from PushOwl dashboard.
 
@@ -102,6 +102,13 @@ Here is how to update your cart URL in PushOwl dashboard:
 3. Edit each of the active notification you see and change all instances of cart URLs in them to your actual cart URL (as discussed above).
    ![changing cart urls](/assets/cart-url-change.png)
 4. Save and you are done!
+
+### 6. Browse Abandonment automation (Optional, if enabled)
+
+Browse Abandonment, if available on your PushOwl plan, works out of the box through this module. There are two requirements though:
+
+1. You should be using version 2.x or above of the Nacelle Nuxt Starter for your store.
+2. Your product URLs defined in the Shopify admin should still work (as it is or with redirection). This is because on clicking Browse Abandonment notifications, users are taken to the product URL defined in the Shopify admin.
 
 ## API
 
@@ -219,6 +226,10 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.6.0
+
+- Browse abandonment support added. This feature works with 2.x and above version of Nacelle Nuxt Starter. Just package upgrade is enough to start using this. Refer Browse abandonment section above to see how it works.
+
 ### 0.5.0
 
 - Move script injection from module to plugin file.
@@ -237,7 +248,7 @@ setTimeout(() => {
 
 ### 0.4.0
 
-- Abandoned Cart Recovery is now enabled. See ACR section above to see how it works.
+- Abandoned Cart Recovery is now enabled. Refer ACR section above to see how it works.
 
 ### 0.3.2
 
