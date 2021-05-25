@@ -139,7 +139,7 @@ For `priceDrop` and `backInStock`
 - `product`: Product to which user subscribed price drop / back in stock notification. `product` requires the following keys
   - `id`: It of the product as number
   - `title`: Title of the product
-- `currentVariant`: Current variant of the above product which user subscribed to. `currentVariant` requires the following keys
+- `variant`: Selected variant of the above product which user subscribed to. `variant` requires the following keys
   - `id`: It of the variant as number
   - `title`: Title of the variant
   - `price`: Price of the current variant as float
