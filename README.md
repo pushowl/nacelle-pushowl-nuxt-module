@@ -13,8 +13,8 @@
 - Automation: Shipping Notifications ✅
 - Automation: Abandoned Cart Recovery ✅
 - Automation: Browse Abandonment ✅
-- Automation: Price Drop ❌
-- Automation: Back in Stock ❌
+- Automation: Price Drop ✅
+- Automation: Back in Stock ✅
 
 Note: The unavailable features are coming soon!
 
@@ -121,7 +121,7 @@ Available API actions:
 
 **Options available**
 
-- `type`: Type of widget to show. `browserPrompt`|`customPrompt`
+- `type`: Type of widget to show. `browserPrompt`|`customPrompt`|`backInStock`|`priceDrop`
 
 For `customPrompt`, following extra options are available:
 
@@ -133,6 +133,16 @@ For `customPrompt`, following extra options are available:
 - `position` _(optional)_: Needs to be specified for desktop and mobile separately like so `position: {default: 'top-left', mobile: 'top'}`. Available options for desktop(default): `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right`. Available options for mobile: `top`, `bottom`. Default is `{ default: 'top-center', mobile: 'top' }`
 - `overlay` _(optional)_: Controls the overlay that shows with the native permission prompt. Only accepts one property for now: `enabled: true|false`. Eg. `overlay: { enabled: false }`
 - `theme` _(optional)_: Allows changing various colors in the prompt. Currently supported properties are: `theme: { yesButtonBgColor: '#f00', yesButtonColor: '#fff' }`
+
+For `priceDrop` and `backInStock`
+
+- `product`: Product to which user subscribed price drop / back in stock notification. `product` requires the following keys
+  - `id`: It of the product as number
+  - `title`: Title of the product
+- `variant`: Selected variant of the above product which user subscribed to. `variant` requires the following keys
+  - `id`: It of the variant as number
+  - `title`: Title of the variant
+  - `price`: Price of the current variant as float
 
 ### `syncCart`
 
