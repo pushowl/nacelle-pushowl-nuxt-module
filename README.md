@@ -16,8 +16,6 @@
 - Automation: Price Drop ✅
 - Automation: Back in Stock ✅
 
-Note: The unavailable features are coming soon!
-
 ## Setup
 
 ### 1. Install module
@@ -232,7 +230,7 @@ setTimeout(() => {
 ## Roadmap
 
 - Give dashboard config as a global object to use while calling the API functions
-- Support Price drop & Back-in-stock automations
+- Support Price drop & Back-in-stock automations ✅
 
 ## Changelog
 
