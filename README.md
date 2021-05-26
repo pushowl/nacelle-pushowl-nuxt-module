@@ -103,16 +103,16 @@ Here is how to update your cart URL in PushOwl dashboard:
 
 ### 6. Browse Abandonment, Price Drop, Back in Stock automations (Optional, if enabled)
 
-[Browse abandonment](https://docs.pushowl.com/en/articles/3821822-browse-abandonment), [Price drop](https://docs.pushowl.com/en/articles/2320402-price-drop-alert), [Back in stock](https://docs.pushowl.com/en/articles/2320389-back-in-stock-alert) and if available on your PushOwl plan, works out of the box through this module. There are two requirements though:
+[Browse abandonment](https://docs.pushowl.com/en/articles/3821822-browse-abandonment), [Price drop](https://docs.pushowl.com/en/articles/2320402-price-drop-alert), [Back in stock](https://docs.pushowl.com/en/articles/2320389-back-in-stock-alert), if available on your PushOwl plan, work out of the box through this module. There are two requirements though:
 
 1. You should be using version 2.x or above of the Nacelle Nuxt Starter for your store.
 2. Your product URLs defined in the Shopify admin should still work (as it is or with redirection). This is because on clicking Browse Abandonment notifications, users are taken to the product URL defined in the Shopify admin.
 
-**IMPORTANT ALERT**: In case you are still using your default Shopify store frontend for checkout purposes, you need to check the store URL registered on PushOwl. The store URL is what these automations use to build a product URL to send in the push notifications. You can check your registered store URL by visiting - [dashboard.pushowl.com/settings](https://dashboard.pushowl.com/settings). Like so:
+ℹ️ **IMPORTANT INFORMATION**: In case you are still using your default Shopify store frontend for checkout purposes, you need to check the store URL registered on PushOwl. The store URL is what these automations use to build a product URL to send in the push notifications. You can check your registered store URL by visiting - [dashboard.pushowl.com/settings](https://dashboard.pushowl.com/settings). Like so:
 
 ![store url](/assets/store-url.png)
 
-If the store URL you see above is not the right store URL where products are available, then the automation settings need to be adjusted for that. Currently, this can only be adjusted through us. So if this is the case, please let us know on support@pushowl.com and we'll adjust the URLs.
+If the store URL you see above is not the right store URL where products are available, then the automation settings need to be adjusted for that. Currently, this can only be adjusted through us. So if this is the case, please let us know on [support@pushowl.com](support@pushowl.com) and we'll adjust the URLs.
 
 ## API
 
