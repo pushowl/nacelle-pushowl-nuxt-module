@@ -242,11 +242,11 @@ setTimeout(() => {
 
 ### 0.7.0
 
-- Price drop and Back in stock automation support added. Just upgrading this package is enough to start using this. Just make sure the automations are enabled on the [PushOwl dashboard](https://dashboard.pushowl.com/automations)
+- Price drop and Back in stock automation support added. Just upgrading this package is enough to start using this. Refer the [automations section above](#6-browse-abandonment-price-drop-back-in-stock-automations-optional-if-enabled) to ensure everything is in place.
 
 ### 0.6.0
 
-- Browse abandonment support added. This feature works with 2.x and above version of Nacelle Nuxt Starter. Just upgrading this package is enough to start using this. Refer Browse abandonment section above to see how it works.
+- Browse abandonment support added. This feature works with 2.x and above version of Nacelle Nuxt Starter. Just upgrading this package is enough to start using this. Refer the [automations section above](#6-browse-abandonment-price-drop-back-in-stock-automations-optional-if-enabled) to ensure everything is in place.
 
 ### 0.5.0
 
