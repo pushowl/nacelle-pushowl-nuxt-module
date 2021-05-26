@@ -13,8 +13,8 @@
 - Automation: Shipping Notifications ✅
 - Automation: Abandoned Cart Recovery ✅
 - Automation: Browse Abandonment ✅
-- Automation: Price Drop ❌
-- Automation: Back in Stock ❌
+- Automation: Price Drop ✅
+- Automation: Back in Stock ✅
 
 Note: The unavailable features are coming soon!
 
