@@ -157,15 +157,18 @@ Cart syncing is auto-enabled in this module. This API gets called automatically 
 ### To show a native browser prompt
 
 ```
-if (Notification.permission === "default") {
-  window.pushowl
-    .trigger("showWidget", {
-      type: "browserPrompt",
-    })
-    .then((res) => {
-      // Do anything you want to after showing prompt
-    });
-}
+
+window.pushowl.trigger('getCurrentPermission').then(permission => {
+  if (permission === "default") {
+    window.pushowl
+      .trigger("showWidget", {
+        type: "browserPrompt",
+      })
+      .then((res) => {
+        // Do anything you want to after showing prompt
+      });
+  }
+});
 ```
 
 Note, always check the current permission value before showing the prompt. `default` value means user has neither allowed nor denied.
@@ -173,22 +176,25 @@ Note, always check the current permission value before showing the prompt. `defa
 ### To show a Custom Prompt
 
 ```
-if (Notification.permission === "default") {
-  window.pushowl
-    .trigger("showWidget", {
-      type: "customPrompt",
-      title: "Lets get you offers!",
-      description: "Subscribe to get amazing offers",
-      yesButton: { label: "Subscribe" },
-      noButton: { label: "Later" },
-      logo: "image url here",
-      position: { default: "top-left", mobile: "bottom" },
-      overlay: { enabled: false },
-    })
-    .then((res) => {
-      // Do anything you want to after showing prompt
-    });
-}
+
+window.pushowl.trigger('getCurrentPermission').then(permission => {
+  if (permission === "default") {
+    window.pushowl
+      .trigger("showWidget", {
+        type: "customPrompt",
+        title: "Lets get you offers!",
+        description: "Subscribe to get amazing offers",
+        yesButton: { label: "Subscribe" },
+        noButton: { label: "Later" },
+        logo: "image url here",
+        position: { default: "top-left", mobile: "bottom" },
+        overlay: { enabled: false },
+      })
+      .then((res) => {
+        // Do anything you want to after showing prompt
+      });
+  }
+});
 ```
 
 Typically you can run the above code inside the router `onReady` event hook, so that the prompt shows when the app is ready. Refer next recipe.
@@ -199,21 +205,23 @@ You can put the following code in a new/exisiting plugin in your Nuxt app:
 
 ```
 ctx.app.router.onReady(() => {
-  if (Notification.permission === "default") {
-    window.pushowl
-      .trigger("showWidget", {
-        type: "customPrompt",
-        title: "Lets get you offers!",
-        description: "Subscribe to get amazing offers",
-        yesButton: { label: "Subscribe" },
-        noButton: { label: "Later" },
-        position: { default: "top-left", mobile: "bottom" },
-        overlay: { enabled: false },
-      })
-      .then((res) => {
-        console.log("PushOwl prompt shown", res);
-      });
-  }
+  window.pushowl.trigger('getCurrentPermission').then(permission => {
+    if (permission === "default") {
+      window.pushowl
+        .trigger("showWidget", {
+          type: "customPrompt",
+          title: "Lets get you offers!",
+          description: "Subscribe to get amazing offers",
+          yesButton: { label: "Subscribe" },
+          noButton: { label: "Later" },
+          position: { default: "top-left", mobile: "bottom" },
+          overlay: { enabled: false },
+        })
+        .then((res) => {
+          console.log("PushOwl prompt shown", res);
+        });
+    }
+  });
 });
 
 ```
@@ -224,12 +232,14 @@ Let's say you want the native browser prompt 5 seconds after the app is open:
 
 ```
 setTimeout(() => {
-  if (Notification.permission === "default") {
-    window.pushowl
-      .trigger("showWidget", {
-        type: "browserPrompt",
-      })
-  }
+  window.pushowl.trigger('getCurrentPermission').then(permission => {
+    if (permission === "default") {
+      window.pushowl
+        .trigger("showWidget", {
+          type: "browserPrompt",
+        })
+    }
+  });
 }, 5000)
 ```
 
