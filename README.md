@@ -250,6 +250,11 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.7.1
+
+- Handle console errors in service worker file
+- Prevent options call in service worker file
+
 ### 0.7.0
 
 - Price drop and Back in stock automation support added. Just upgrading this package is enough to start using this. Just make sure the automations are enabled on the [PushOwl dashboard](https://dashboard.pushowl.com/automations)
