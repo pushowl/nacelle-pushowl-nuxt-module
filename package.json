@@ -1,6 +1,6 @@
 {
   "name": "@pushowl/nacelle-nuxt-module",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Integrates PushOwl into your Nacelle Nuxt project",
   "license": "MIT",
   "contributors": [
