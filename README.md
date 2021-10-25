@@ -241,6 +241,11 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.7.1
+
+- Handle console errors in service worker file
+- Prevent options call in service worker file
+- Please update your service worker file again by following the instructions above in [step 3](https://github.com/pushowl/nacelle-pushowl-nuxt-module#3-copy-service-worker-file-into-the-app)
 ### 0.7.0
 
 - Price drop and Back in stock automation support added. Just upgrading this package is enough to start using this. Refer the [automations section above](#6-browse-abandonment-price-drop-back-in-stock-automations-optional-if-enabled) to ensure everything is in place.
