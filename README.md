@@ -254,7 +254,7 @@ setTimeout(() => {
 
 - Handle console errors in service worker file
 - Prevent options call in service worker file
-
+- Please update your service worker file again by following the instructions above in [step 3](https://github.com/pushowl/nacelle-pushowl-nuxt-module#3-copy-service-worker-file-into-the-app)
 ### 0.7.0
 
 - Price drop and Back in stock automation support added. Just upgrading this package is enough to start using this. Just make sure the automations are enabled on the [PushOwl dashboard](https://dashboard.pushowl.com/automations)
