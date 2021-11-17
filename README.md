@@ -241,6 +241,10 @@ setTimeout(() => {
 
 ## Changelog
 
+### 0.7.2
+
+- Add retry mechanism to service worker file
+
 ### 0.7.1
 
 - Handle console errors in service worker file
